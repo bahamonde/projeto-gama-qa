@@ -45,5 +45,10 @@ public class Configuracao {
 	public static WebElement id(String selector) {
 		return browser.findElement(By.id(selector));
     }
+
+    public static void selectOptionsByExamples(String example) {
+        Select var = new Select(cssSelector("select"));
+        var.selectByVisibleText(example);
+    }
     
 }

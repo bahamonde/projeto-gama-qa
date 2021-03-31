@@ -6,6 +6,7 @@ import io.cucumber.projetoFinal.steps.CompartilhadoSteps;
 
 import static org.junit.Assert.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class EnterVehicleData{
 
