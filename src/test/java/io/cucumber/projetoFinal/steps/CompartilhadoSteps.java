@@ -11,6 +11,7 @@ public class CompartilhadoSteps {
     }
 
 
+
     @Dado("clico no botao next para avancar de aba")
     public void clico_no_botao_next_para_avancar_de_aba() {
         Configuracao.cssSelector("button[class='next button']").click();

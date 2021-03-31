@@ -47,7 +47,7 @@ public class EnterVehicleData{
     }
 
     @Dado("seleciono a opcao No no campo Right Hand Drive")
-    public void seleciono_yes_no_campo_Right_Hand_Drive() {
+    public void seleciono_no_campo_Right_Hand_Drive() {
        //Configuracao.cssSelector(".span.ideal-radio").click();
        Configuracao.cssSelectors(".ideal-radiocheck-label").get(1).click();
                
@@ -88,9 +88,7 @@ public class EnterVehicleData{
     @Dado("digito a {} entre 100 e 100000 no campo Annual Mileage [mi]")
     public void digito_a_entre_e_no_campo_Annual_Mileage_mi(String string) {
         Configuracao.id("annualmileage").sendKeys(string);
-    }
-
-    
+    }    
 
     @Entao("devo ver o primeiro campo {string}")
     public void devo_ver_o_primeiro_campo(String string) {

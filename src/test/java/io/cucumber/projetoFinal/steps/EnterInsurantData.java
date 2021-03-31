@@ -26,51 +26,62 @@ public class EnterInsurantData {
     }
 
     @Dado("seleciono a opcao Female no campo Gender")
-public void seleciono_a_opcao_Female_no_campo_Gender() {
+    public void seleciono_a_opcao_Female_no_campo_Gender() {
     Configuracao.cssSelectors(".ideal-radiocheck-label").get(3).click();
-}
+    }
 
-@Dado("digito Rua Flores no campo Street Address")
-public void digito_Rua_Flores_no_campo_Street_Address() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Dado("seleciono a Brazil no campo Country")
-public void seleciono_a_Brazil_no_campo_Country() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Dado("digito {int} no campo Street Zip Code")
-public void digito_no_campo_Street_Zip_Code(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+    @Dado("digito {} no campo Street Address")
+    public void digito_Rua_no_campo_Street_Address(String string) {
+        Configuracao.id("streetaddress").sendKeys(string);
+    }
 
-    @Dado("digito <cidade> no campo City")
-public void digito_cidade_no_campo_City() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Dado("seleciono Employee no campo Occupation")
-public void seleciono_Employee_no_campo_Occupation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Dado("marco Speeding no campo Hobbies")
-public void marco_Speeding_no_campo_Hobbies() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Dado("digito linkedin.com\\/in\\/sena no campo Website")
-public void digito_linkedin_com_in_sena_no_campo_Website() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Dado("envio uma foto no campo Picture")
-public void envio_uma_foto_no_campo_Picture() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+    @Dado("seleciono {} no campo Country")
+    public void seleciono_pais_no_campo_Country(String string) {
+        Select var = new Select(Configuracao.cssSelector("select#country"));
+        var.selectByVisibleText(string);
+    }
+    
+    @Dado("digito {} no campo Street Zip Code")
+    public void digito_no_campo_Street_Zip_Code(String string) {
+        Configuracao.id("zipcode").sendKeys(string);
+    }
+
+        @Dado("digito {} no campo City")
+    public void digito_cidade_no_campo_City(String string) {
+        Configuracao.id("city").sendKeys(string);
+    }
+    
+    @Dado("seleciono {} no campo Occupation")
+    public void seleciono_Employee_no_campo_Occupation(String string) {
+        Select var = new Select(Configuracao.cssSelector("select#occupation"));
+        var.selectByVisibleText(string);
+    }
+
+    @Dado("marco Bungee Jumping e Skydiving no campo Hobbies")
+    public void marco_BungeeJumping_Skydiving_no_campo_Hobbies() {
+        Configuracao.cssSelectors(".ideal-radiocheck-label").get(5).click();
+        Configuracao.cssSelectors(".ideal-radiocheck-label").get(7).click();
+    }
+
+    @Dado("digito {} no campo Website")
+    public void digito_linkedin_com_in_sena_no_campo_Website(String string) {
+        Configuracao.id("website").sendKeys(string);
+    }
+
+    @Dado("clico no botao next para para a proxima aba")
+    public void clico_no_botao_next_para_proxima_aba() {
+        Configuracao.cssSelector("button#nextenterproductdata").click();
+    }
+
+    @Entao("devo ver o campo {string}")
+    public void devo_ver_o_campo(String string) {
+        assertEquals(string, Configuracao.cssSelectors("label.main").get(28).getText());         
+    }
+
+    /*@Dado("envio uma foto no campo Picture")
+    public void envio_uma_foto_no_campo_Picture() {
+        Configuracao.uploadFile();        
+    }*/
 
 
     

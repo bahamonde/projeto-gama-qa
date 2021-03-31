@@ -54,6 +54,11 @@ public class Configuracao {
         var.selectByVisibleText(example);
     }
 
-  
-    
+    /*public void uploadFile() throws InterruptedException {
+      browser.findElement("button#open").sendKeys("C:\\Users\\Aline\\Desktop\\esteira.jpeg");
+      String expected = browser.findElement("button#open").getAttribute("value");
+      Thread.sleep(3000);   
+    }*/
 }
+
+
