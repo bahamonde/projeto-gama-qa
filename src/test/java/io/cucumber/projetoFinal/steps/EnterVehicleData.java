@@ -46,10 +46,10 @@ public class EnterVehicleData{
         var.selectByVisibleText(string);
     }
 
-    @Dado("seleciono a opcao Yes no campo Right Hand Drive")
+    @Dado("seleciono a opcao No no campo Right Hand Drive")
     public void seleciono_yes_no_campo_Right_Hand_Drive() {
-       Configuracao.cssSelector("span.ideal-radio").click();
-       //Configuracao.cssSelector("input#righthanddriveno>input>span#text").click();
+       //Configuracao.cssSelector(".span.ideal-radio").click();
+       Configuracao.cssSelectors(".ideal-radiocheck-label").get(1).click();
                
     }
 
@@ -94,8 +94,7 @@ public class EnterVehicleData{
 
     @Entao("devo ver o primeiro campo {string}")
     public void devo_ver_o_primeiro_campo(String string) {
-        assertEquals(string, Configuracao.cssSelectors("label.main").get(15).getText());
-        Configuracao.fechar();     
+        assertEquals(string, Configuracao.cssSelectors("label.main").get(15).getText());         
     }
     
 
