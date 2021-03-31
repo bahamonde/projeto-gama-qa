@@ -1,11 +1,14 @@
 package io.cucumber.projetoFinal.servicos;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 
 public class Configuracao {
@@ -50,5 +53,7 @@ public class Configuracao {
         Select var = new Select(cssSelector("select"));
         var.selectByVisibleText(example);
     }
+
+  
     
 }
