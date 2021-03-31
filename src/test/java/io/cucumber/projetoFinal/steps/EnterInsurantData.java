@@ -6,7 +6,6 @@ import io.cucumber.projetoFinal.steps.CompartilhadoSteps;
 
 import static org.junit.Assert.*;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.By;
 
 public class EnterInsurantData {
 
@@ -70,7 +69,7 @@ public class EnterInsurantData {
 
     @Dado("clico no botao next para para a proxima aba")
     public void clico_no_botao_next_para_proxima_aba() {
-        Configuracao.cssSelector("button#nextenterproductdata").click();
+        Configuracao.cssSelector("button.next").click();
     }
 
     @Entao("devo ver o campo {string}")

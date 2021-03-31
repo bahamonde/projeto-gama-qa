@@ -46,7 +46,7 @@ Funcionalidade: Preencher cadastro do site Tricentis completo
 
   Esquema do Cenario: Preecher aba Enter Product Data
       E digito <data> no campo Start Date
-      E seleciono <valor> no campo Start Date
+      E seleciono <valor> no campo Insurance Sum [$]
       E seleciono <bonus> no campo Merit Rating
       E seleciono <seguro> no campo Damage Insurance
       E marco Bungee Euro Protection no campo Optional Products
@@ -55,7 +55,7 @@ Funcionalidade: Preencher cadastro do site Tricentis completo
       Entao devo ver o campo "x x "
       Exemplos:
       |data      |valor        |bonus  |seguro       |cortesia  |                            
-      |11/03/1990|25.000.000,00|Bonus 8|Full Coverage|Yes       |
+      |11/03/2022|25.000.000,00|Bonus 8|Full Coverage|Yes       |
       
 
 
