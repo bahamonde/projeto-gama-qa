@@ -5,7 +5,6 @@ import io.cucumber.projetoFinal.servicos.Configuracao;
 import io.cucumber.projetoFinal.steps.CompartilhadoSteps;
 
 import static org.junit.Assert.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class EnterVehicleData{
@@ -91,10 +90,7 @@ public class EnterVehicleData{
         Configuracao.id("annualmileage").sendKeys(string);
     }
 
-    @Dado("clico no botao next para avancar de aba")
-    public void clico_no_botao_next_para_avancar_de_aba() {
-        Configuracao.cssSelector("button[class='next button']").click();
-    }
+    
 
     @Entao("devo ver o primeiro campo {string}")
     public void devo_ver_o_primeiro_campo(String string) {
