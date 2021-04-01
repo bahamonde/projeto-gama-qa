@@ -7,7 +7,7 @@ import io.cucumber.projetoFinal.steps.CompartilhadoSteps;
 import static org.junit.Assert.*;
 import org.openqa.selenium.support.ui.Select;
 
-public class EnterVehicleData{
+public class EnterVehicleDataSteps {
 
     @Dado("seleciono a {} do campo Make")
     public void seleciono_a_marca_do_campo_Make(String string) {
@@ -19,8 +19,7 @@ public class EnterVehicleData{
     @Dado("seleciono o {} do campo Model")
     public void seleciono_o_modelo_do_campo_Model(String string) {
         Select var = new Select(Configuracao.cssSelector("select#model"));
-        var.selectByVisibleText(string);
-        
+        var.selectByVisibleText(string);       
         
     }
 

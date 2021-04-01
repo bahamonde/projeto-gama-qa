@@ -72,8 +72,8 @@ Funcionalidade: Preencher cadastro do site Tricentis completo
     E digito <confirma> no campo Confirm Password
     E digito <comentario> no campo Comments
     E clico no botao Send
-    Entao devo ver a mensagem "Sending e-mail success!!
-"
+    Entao devo ver a mensagem "Sending e-mail success!"
+
 
 
 

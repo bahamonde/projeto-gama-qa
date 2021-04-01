@@ -7,7 +7,7 @@ import io.cucumber.projetoFinal.steps.CompartilhadoSteps;
 import static org.junit.Assert.*;
 import org.openqa.selenium.support.ui.Select;
 
-public class SelectPriceOption {
+public class SelectPriceOptionSteps {
 
     @Dado("marco a opcao Platinum no campo Select Option")
     public void marco_platinum() throws InterruptedException {

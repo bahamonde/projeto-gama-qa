@@ -7,7 +7,7 @@ import io.cucumber.projetoFinal.steps.CompartilhadoSteps;
 import static org.junit.Assert.*;
 import org.openqa.selenium.support.ui.Select;
 
-public class EnterProductData {
+public class EnterProductDataSteps {
 
     @Dado("digito {} no campo Start Date")
     public void digito_no_campo_Start_Date(String string) {

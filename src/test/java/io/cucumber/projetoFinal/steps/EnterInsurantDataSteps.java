@@ -7,7 +7,7 @@ import io.cucumber.projetoFinal.steps.CompartilhadoSteps;
 import static org.junit.Assert.*;
 import org.openqa.selenium.support.ui.Select;
 
-public class EnterInsurantData {
+public class EnterInsurantDataSteps {
 
     @Dado("digito {} no campo First Name")
     public void digito_o_nome(String string) {
