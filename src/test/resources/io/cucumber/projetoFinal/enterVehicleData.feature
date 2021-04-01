@@ -26,37 +26,41 @@ Funcionalidade: Preencher cadastro do site Tricentis completo
 
  
   Esquema do Cenario: Preecher aba Enter Insurant Data
-      E digito <nome> no campo First Name
-      E digito <sobrenome> no campo Last Name
-      E digito <data> no campo Date of Birth
-      E seleciono a opcao Female no campo Gender
-      E digito <endereco> no campo Street Address
-      E seleciono <pais> no campo Country
-      E digito <cep> no campo Street Zip Code
-      E digito <cidade> no campo City
-      E seleciono <ocupacao> no campo Occupation
-      E marco Bungee Jumping e Skydiving no campo Hobbies
-      E digito <site> no campo Website
-      E clico no botao next para para a proxima aba
-      Entao devo ver o campo "Start Date"
-      Exemplos:
+    E digito <nome> no campo First Name
+    E digito <sobrenome> no campo Last Name
+    E digito <data> no campo Date of Birth
+    E seleciono a opcao Female no campo Gender
+    E digito <endereco> no campo Street Address
+    E seleciono <pais> no campo Country
+    E digito <cep> no campo Street Zip Code
+    E digito <cidade> no campo City
+    E seleciono <ocupacao> no campo Occupation
+    E marco Bungee Jumping e Skydiving no campo Hobbies
+    E digito <site> no campo Website
+    E clico no botao next para para a proxima aba
+    Entao devo ver o campo "Start Date"
+    Exemplos:
       |nome  |sobrenome|data      |endereco  |pais  |cep     |cidade   |ocupacao|site                |                                  
       |Aline |Sena     |11/03/1990|Rua Flores|Brazil|05578201|São Paulo|Employee|linkedin.com/in/sena|
 
 
   Esquema do Cenario: Preecher aba Enter Product Data
-      E digito <data> no campo Start Date
-      E seleciono <valor> no campo Insurance Sum [$]
-      E seleciono <bonus> no campo Merit Rating
-      E seleciono <seguro> no campo Damage Insurance
-      E marco Bungee Euro Protection no campo Optional Products
-      E seleciono <cortesia> no campo Courtesy Car
-      E clico no botao next para para a proxima aba
-      Entao devo ver o campo "x x "
-      Exemplos:
+    E digito <data> no campo Start Date
+    E seleciono <valor> no campo Insurance Sum [$]
+    E seleciono <bonus> no campo Merit Rating
+    E seleciono <seguro> no campo Damage Insurance
+    E marco Bungee Euro Protection no campo Optional Products
+    E seleciono <cortesia> no campo Courtesy Car
+    E clico no botao next
+    Entao devo ver o campo a seguir "Price per Year ($)"
+    Exemplos:
       |data      |valor        |bonus  |seguro       |cortesia  |                            
       |11/03/2022|25.000.000,00|Bonus 8|Full Coverage|Yes       |
       
 
+  Cenario: Preecher aba Select Price Option
+    E marco a opcao Platinum no campo Select Option
+    E clico em next
+    Entao devo ver o proximo campo "E-Mail"
 
 

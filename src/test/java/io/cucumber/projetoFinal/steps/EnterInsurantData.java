@@ -69,7 +69,7 @@ public class EnterInsurantData {
 
     @Dado("clico no botao next para para a proxima aba")
     public void clico_no_botao_next_para_proxima_aba() {
-        Configuracao.cssSelector("button.next").click();
+        Configuracao.cssSelector("button#nextenterproductdata").click();
     }
 
     @Entao("devo ver o campo {string}")
