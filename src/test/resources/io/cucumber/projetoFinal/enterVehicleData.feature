@@ -63,4 +63,17 @@ Funcionalidade: Preencher cadastro do site Tricentis completo
     E clico em next
     Entao devo ver o proximo campo "E-Mail"
 
+  
+  Esquema do Cenario: Preecher aba Enter Product Data
+    E digito <email> no campo E-Mail
+    E digito <fone> no campo Phone
+    E digito <user> no campo Username
+    E digito <senha> no campo Password
+    E digito <confirma> no campo Confirm Password
+    E digito <comentario> no campo Comments
+    E clico no botao Send
+    Entao devo ver a mensagem "Sending e-mail success!!
+"
+
+
 
