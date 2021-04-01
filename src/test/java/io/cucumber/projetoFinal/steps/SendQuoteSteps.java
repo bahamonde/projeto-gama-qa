@@ -47,7 +47,8 @@ public class SendQuoteSteps {
 
     @Entao("devo ver a mensagem {string}")
     public void devo_ver_a_mensagem(String string) {
-        assertEquals(string, Configuracao.cssSelectors("h2").get(0).getText());  
+        assertEquals(string, Configuracao.cssSelectors("h2").get(0).getText());
+        Configuracao.fechar();  
     }
 
 }
