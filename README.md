@@ -1,4 +1,4 @@
-# <p align="center">Desafio Final Individual - Accenture QA</p>
+# <p align="center">Desafio Final Individual QA- Accenture - Gama Academy</p>
 
 <p align="center">
   <a href="#descrição">Descrição</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
