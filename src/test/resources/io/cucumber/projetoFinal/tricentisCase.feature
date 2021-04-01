@@ -74,8 +74,8 @@ Funcionalidade: Preencher cadastro do site Tricentis completo
     E clico no botao Send
     Entao devo ver a mensagem "Sending e-mail success!"
     Exemplos:
-      |email          |fone       |user   |senha |confirma|comentario                           
-      |email@email.com|11988888888|user123|Asd123|Asd123  |N/A
+      |email          |fone       |user   |senha |confirma|comentario|                           
+      |email@email.com|11988888888|user123|Asd123|Asd123  |N/A       |
       
 
 

@@ -52,5 +52,5 @@ public class EnterProductDataSteps {
     public void devo_ver_o_campo(String string) {
         assertEquals(string, Configuracao.cssSelectors("table#priceTable tbody tr td").get(0).getText());         
     }
-
+    
 }

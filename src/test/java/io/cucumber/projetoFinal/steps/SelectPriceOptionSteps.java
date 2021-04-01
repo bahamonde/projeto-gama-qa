@@ -24,6 +24,6 @@ public class SelectPriceOptionSteps {
     public void devo_ver_o_campo(String string) {
         assertEquals(string, Configuracao.cssSelector(".idealforms-field-email").getText());         
     }
-
+       
 }
 

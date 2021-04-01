@@ -7,4 +7,5 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(tags = "not @ignore", plugin = {"pretty"})
 public class RunCucumberTest {
+    
 }

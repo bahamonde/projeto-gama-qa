@@ -11,22 +11,18 @@ public class EnterVehicleDataSteps {
 
     @Dado("seleciono a {} do campo Make")
     public void seleciono_a_marca_do_campo_Make(String string) {
-        Configuracao.selectOptionsByExamples(string);
-        
+        Configuracao.selectOptionsByExamples(string);        
     }
-
 
     @Dado("seleciono o {} do campo Model")
     public void seleciono_o_modelo_do_campo_Model(String string) {
         Select var = new Select(Configuracao.cssSelector("select#model"));
-        var.selectByVisibleText(string);       
-        
+        var.selectByVisibleText(string);    
     }
 
     @Dado("digito os {} entre 1 e 2000 no campo Cylinder Capacity [ccm]")
     public void digito_os_entre_e_no_campo_Cylinder_Capacity_ccm(String string) {
         Configuracao.id("cylindercapacity").sendKeys(string);
-        
     }
 
     @Dado("digito {} entre 1 e 2000 no campo Engine Performance [kW]")
@@ -49,7 +45,6 @@ public class EnterVehicleDataSteps {
     public void seleciono_no_campo_Right_Hand_Drive() {
        //Configuracao.cssSelector(".span.ideal-radio").click();
        Configuracao.cssSelectors(".ideal-radiocheck-label").get(1).click();
-               
     }
 
     @Dado("seleciono a {} no campo Number of Seats da moto de 1 a 3")
@@ -91,8 +86,7 @@ public class EnterVehicleDataSteps {
 
     @Entao("devo ver o primeiro campo {string}")
     public void devo_ver_o_primeiro_campo(String string) {
-        assertEquals(string, Configuracao.cssSelectors("label.main").get(15).getText());         
-    }
-    
-
+        assertEquals(string, Configuracao.cssSelectors("label.main").get(15).getText());    
+    }   
+      
 }

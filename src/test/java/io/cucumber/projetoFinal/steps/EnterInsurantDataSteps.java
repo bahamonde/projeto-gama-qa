@@ -26,7 +26,7 @@ public class EnterInsurantDataSteps {
 
     @Dado("seleciono a opcao Female no campo Gender")
     public void seleciono_a_opcao_Female_no_campo_Gender() {
-    Configuracao.cssSelectors(".ideal-radiocheck-label").get(3).click();
+        Configuracao.cssSelectors(".ideal-radiocheck-label").get(3).click();
     }
 
     @Dado("digito {} no campo Street Address")
@@ -45,7 +45,7 @@ public class EnterInsurantDataSteps {
         Configuracao.id("zipcode").sendKeys(string);
     }
 
-        @Dado("digito {} no campo City")
+    @Dado("digito {} no campo City")
     public void digito_cidade_no_campo_City(String string) {
         Configuracao.id("city").sendKeys(string);
     }
@@ -76,15 +76,5 @@ public class EnterInsurantDataSteps {
     public void devo_ver_o_campo(String string) {
         assertEquals(string, Configuracao.cssSelectors("label.main").get(28).getText());         
     }
-
-    /*@Dado("envio uma foto no campo Picture")
-    public void envio_uma_foto_no_campo_Picture() {
-        Configuracao.uploadFile();        
-    }*/
-
-
-    
-
-
 
 }
