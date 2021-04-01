@@ -42,7 +42,7 @@ public class SendQuoteSteps {
     @Dado("clico no botao Send")
     public void clico_no_botao_Send() throws InterruptedException {
         Configuracao.cssSelector("button#sendemail").click();
-        Thread.sleep(15000); //Se a conformaçao do formulario enviado demorar muito para carregar, aumentar o tempo de espera nessa linha(em milisegundos)
+        Thread.sleep(15000); //Se a confirmaçao de envio no site demorar muito para carregar, aumentar o tempo de espera (em milisegundos)
     }
 
     @Entao("devo ver a mensagem {string}")

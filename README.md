@@ -10,7 +10,7 @@
 
 Realizado por:
 
-- [Aline Camilo Sena](https://www.linkedin.com/in/sena)
+- [Aline Camilo Sena](https://www.linkedin.com/in/sena) 👩
 
 <br>
 
@@ -20,19 +20,19 @@ Realizado por:
 ### Criar um projeto em selenium webdrive (java) e cucumber para realizar as seguintes tarefas:
 <br>
 
-<ul>Entrar no site http://sampleapp.tricentis.com/101/app.php</ul>
+<ul>🠮 Entrar no site http://sampleapp.tricentis.com/101/app.php</ul>
 
-<ul>Preencher o formulário, aba “Enter Vehicle Data” e pressione next</ul>
+<ul>🠮 Preencher o formulário, aba “Enter Vehicle Data” e pressione next</ul>
 
-<ul>Preencher o formulário, aba “Enter Insurant Data” e pressione next</ul>
+<ul>🠮 Preencher o formulário, aba “Enter Insurant Data” e pressione next</ul>
 
-<ul>Preencher o formulário, aba “Enter Product Data” e pressione next</ul>
+<ul>🠮 Preencher o formulário, aba “Enter Product Data” e pressione next</ul>
 
-<ul>Preencher o formulário, aba “Select Price Option” e pressione next</ul>
+<ul>🠮 reencher o formulário, aba “Select Price Option” e pressione next</ul>
 
-<ul>Preencher o formulário, aba “Send Quote” e pressione Send</ul>
+<ul>🠮 Preencher o formulário, aba “Send Quote” e pressione Send</ul>
 
-<ul>Verificar a mensagem “Sending e-mail success!” na tela</ul>
+<ul>🠮 Verificar a mensagem “Sending e-mail success!” na tela</ul>
 
 <br>
 
@@ -100,6 +100,7 @@ mvnw.cmd clean
 ```bash
 ./test.bat
 ```
+<br>
 ## Estrutura de arquivos
 ```
   driver 
